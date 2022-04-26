@@ -1,0 +1,35 @@
+{
+    "info" : {
+        "chapterID" : 1,
+        "title" : "prologue"
+    },
+    "dialogue" : [
+        {
+            "dialogueID" : 0,
+            "speaker" : 0,
+            "content" : "中233中abc，哈d",
+            "branch" : []
+        },
+        {
+            "dialogueID" : 1,
+            "speaker" : 0,
+            "content" : "起身穿衣洗漱，正准备出门时无意中瞟到于子诺夜里两点钟发来的微信消息。",
+            "branch" : []
+        },
+        {
+            "dialogueID" : 2,
+            "speaker" : 2,
+            "content" : "满怀激动地打开查看，只看到短短一行字：“明晚有点事，可能去不了了”，还跟了一个蠢蠢的表情，不过蛮可爱的。我在思考该怎么回复她：",
+            "branch" : [
+                {
+                    "condition" : "回复：哦好的，没事",
+                    "branchPos" : 0
+                },
+                {
+                    "condition" : "回复：嘤嘤嘤",
+                    "branchPos" : 1
+                }
+            ]
+        }
+    ]
+}
