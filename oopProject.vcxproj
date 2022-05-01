@@ -102,12 +102,15 @@
   <ItemGroup>
     <ClCompile Include="src\controller.cpp" />
     <ClCompile Include="src\drawer.cpp" />
+    <ClCompile Include="src\hero.cpp" />
     <ClCompile Include="src\narrator.cpp" />
+    <ClCompile Include="src\role.cpp" />
     <ClCompile Include="test.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="src\controller.h" />
     <ClInclude Include="src\drawer.h" />
+    <ClInclude Include="src\hero.h" />
     <ClInclude Include="src\include\include\nlohmann\adl_serializer.hpp" />
     <ClInclude Include="src\include\include\nlohmann\detail\conversions\from_json.hpp" />
     <ClInclude Include="src\include\include\nlohmann\detail\conversions\to_chars.hpp" />
@@ -145,6 +148,7 @@
     <ClInclude Include="src\include\single_include\nlohmann\json.hpp" />
     <ClInclude Include="src\narrator.h" />
     <ClInclude Include="src\nlohmann\json.hpp" />
+    <ClInclude Include="src\role.h" />
   </ItemGroup>
   <ItemGroup>
     <None Include="plots\chap1.json" />

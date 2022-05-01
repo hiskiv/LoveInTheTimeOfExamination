@@ -8,18 +8,40 @@
             "dialogueID" : 0,
             "speaker" : 0,
             "content" : "中233中abc，哈d",
+            "jump": -1,
+            "finish" : 0,
             "branch" : []
         },
         {
             "dialogueID" : 1,
             "speaker" : 0,
             "content" : "起身穿衣洗漱，正准备出门时无意中瞟到于子诺夜里两点钟发来的微信消息。",
+            "jump": -1,
+            "finish" : 0,
             "branch" : []
         },
         {
             "dialogueID" : 2,
+            "speaker" : 3,
+            "content" : "吼吼吼！",
+            "jump": -1,
+            "finish" : 0,
+            "branch" : []
+        },
+        {
+            "dialogueID" : 3,
+            "speaker" : 0,
+            "content" : "哈哈！！",
+            "jump": -1,
+            "finish" : 0,
+            "branch" : []
+        },
+        {
+            "dialogueID" : 4,
             "speaker" : 2,
             "content" : "满怀激动地打开查看，只看到短短一行字：“明晚有点事，可能去不了了”，还跟了一个蠢蠢的表情，不过蛮可爱的。我在思考该怎么回复她：",
+            "jump": -1,
+            "finish" : 0,
             "branch" : [
                 {
                     "condition" : "回复：哦好的，没事",

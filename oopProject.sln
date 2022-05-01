@@ -5,6 +5,8 @@ VisualStudioVersion = 15.0.28307.1913
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "oopProject", "oopProject.vcxproj", "{B8D55143-4962-4ED3-9DB5-BFD6DCBEA609}"
 EndProject
+Project("{54435603-DBB4-11D2-8724-00A0C9A8B90C}") = "Setup1", "C:\Users\hikifeng\Desktop\test\Setup1\Setup1.vdproj", "{91357E0C-16F3-4648-8D80-F310596F5C07}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -21,6 +23,10 @@ Global
 		{B8D55143-4962-4ED3-9DB5-BFD6DCBEA609}.Release|x64.Build.0 = Release|x64
 		{B8D55143-4962-4ED3-9DB5-BFD6DCBEA609}.Release|x86.ActiveCfg = Release|Win32
 		{B8D55143-4962-4ED3-9DB5-BFD6DCBEA609}.Release|x86.Build.0 = Release|Win32
+		{91357E0C-16F3-4648-8D80-F310596F5C07}.Debug|x64.ActiveCfg = Debug
+		{91357E0C-16F3-4648-8D80-F310596F5C07}.Debug|x86.ActiveCfg = Debug
+		{91357E0C-16F3-4648-8D80-F310596F5C07}.Release|x64.ActiveCfg = Release
+		{91357E0C-16F3-4648-8D80-F310596F5C07}.Release|x86.ActiveCfg = Release
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

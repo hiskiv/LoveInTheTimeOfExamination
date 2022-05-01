@@ -5,6 +5,7 @@
 struct dialogue{
     int speaker;
     int hasBranch;
+	int isfinish;
     std::string text;
     std::vector<std::string> branches;
 };
@@ -16,8 +17,9 @@ private:
     nlohmann::json currentJson;
 public:
     narrator();
+	narrator(int chapID);
     int endOfChap();
-    dialogue narrate();
+    dialogue narrate(int pos=-1);
     void openChapter(int chapID);
     void branch(int choice);
 };

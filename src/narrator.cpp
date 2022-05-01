@@ -7,10 +7,16 @@
 using namespace std;
 using json = nlohmann::json;
 
-narrator::narrator(){
-    chapterID = 1;
+narrator::narrator() {
+	chapterID = 1;
+	plotPos = 0;
+	openChapter(1);
+}
+
+narrator::narrator(int chapID){
+    chapterID = chapID;
     plotPos = 0;
-    openChapter(1);
+    openChapter(chapID);
 }
 
 //judge if current chapter has come to an end
@@ -20,19 +26,23 @@ int narrator::endOfChap(){
 }
 
 // moving forward by one dialogue
-dialogue narrator::narrate(){
+// if pos is not -1, then begin from the position specified
+dialogue narrator::narrate(int pos){
+	if (pos != -1) plotPos = pos;
     json dia = currentJson["dialogue"][plotPos];
     dialogue res;
     res.text = dia.at("content");
     // cout << "DDD: " << dia.at("content") << endl;
     res.speaker = dia.at("speaker");
+	res.isfinish = dia.at("finish");
     res.branches.clear();
     res.hasBranch = 0;
     for(int i=0;i<dia.at("branch").size();i++){
         res.hasBranch = 1;
         res.branches.push_back(dia.at("branch")[i].at("condition"));
     }
-    plotPos++;
+	if (dia.at("jump") != -1) plotPos = dia.at("jump");
+	else plotPos++;
     return res;
 }
 
